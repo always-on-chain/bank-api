@@ -1,5 +1,6 @@
 import React from 'react';
-import OpenAccount from './OpenAccount.jsx'
+import OpenAccount from './OpenAccount.jsx';
+import FormControl from 'react-bootstrap/lib/FormControl';
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -10,10 +11,22 @@ class SignIn extends React.Component {
     }
   }
 
+  
+
   render() {
     return (
       <div>
-        Sign In
+        <form id="sign-in">
+          <FormControl
+            placeholder="Enter username"
+            id="signin-username"
+          />
+          <FormControl
+            placeholder="Enter password"
+            id='signin-password'
+          />
+
+        </form>
         <OpenAccount />
       </div>
     )

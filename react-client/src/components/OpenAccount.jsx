@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/lib/Button';
 
 class OpenAccount extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class OpenAccount extends React.Component {
 
   render() {
     return (
-      <h1>Open Account</h1>
+      <Button bsStyle="primary">Open Account</Button>
     )
   }
 }
