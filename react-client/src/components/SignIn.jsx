@@ -27,7 +27,6 @@ class SignIn extends React.Component {
           <Button bsStyle="success" id="signin-button">Sign In</Button>
 
         </form>
-        <OpenAccount />
       </div>
     )
   }
