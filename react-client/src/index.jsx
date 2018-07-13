@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SignIn from './components/SignIn.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,9 +12,8 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('hi')
     return (
-      <h3>This is your account</h3>
+      <SignIn />
     )
   }
 }
