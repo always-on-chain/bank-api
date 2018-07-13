@@ -2,7 +2,7 @@
 body {
   padding: 2%;
 }
-#sign-in {
+#sign-in-form, #open-account-form {
   width: 40%;
 }
 

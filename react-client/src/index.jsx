@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SignIn from './components/SignIn.jsx';
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
@@ -8,7 +9,14 @@ class App extends React.Component {
     this.state = {
       account: {}
     }
-    
+  }
+
+  postOpenAccount(username, password, balance) {
+    axios.post(`/accounts`, {
+      username: username,
+      password: password,
+      balance: balance
+    })
   }
 
   render() {
