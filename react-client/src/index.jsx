@@ -7,22 +7,22 @@ import axios from 'axios';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      account: {}
-    }
-
+    
     this.postOpenAccount = this.postOpenAccount.bind(this);
   }
 
   postOpenAccount(username, password, balance) {
-    console.log(username, password, balance)
+    console.log(typeof parseInt(balance))
     axios.post(`/accounts`, {
       username: username,
       password: password,
       balance: balance
       })
       .then((response) => {
-        console.log('successful post request', response)
+        console.log('succesfully opened an account', response)
+      })
+      .catch((error) => {
+        console.log('failed to open an account', error);
       })
   }
 

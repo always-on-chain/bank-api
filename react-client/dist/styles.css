@@ -2,10 +2,41 @@
 body {
   padding: 2%;
 }
-#sign-in-form, #open-account-form {
+#sign-in-form, #open-account-form, #transaction-form {
   width: 40%;
 }
 
-#signin-username {
+#signin-username, #signin-password {
+  margin-bottom: 2%;
+}
+
+#created-account {
+  color: blue;
+  font-size: 12px;
+  margin-top: 2%;
+}
+
+
+#signin-incorrect {
+  color: red;
+  font-size: 12px;
+  margin-top: 2%;
+}
+
+#deposit-form-button, #withdraw-form-button {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+#make-deposit, #make-withdraw {
+  margin-left: 2%;
+}
+
+#current-balance {
+  font-size: 14px;
+  color: blue;
+}
+
+#open-account-button, #open-account-username, #open-account-password, #open-account-balance {
   margin-bottom: 2%;
 }
