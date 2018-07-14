@@ -26,6 +26,8 @@ app.post('/accounts/:id/deposit', (req, res) => {
   let id = req.params.id;
   let newBalance = req.body.newBalance;
 
+  console.log('get req', req.body)
+
   database.makeTransaction(id, newBalance, (account) => {
     res.send(account)
   })
